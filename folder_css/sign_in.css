@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+}
+table{
+    width: 70%;
+    height: 400px; 
+    margin: auto;
+}
+tr{
+    color: #D75F5F;
+}
+
+.title{
+    font-size: 18px;
+    font-family: 'Poppins' ,sans-serif;
+}
+.button-submit{
+    text-align: end;
+    padding-right: 85px;
+
+}
+.form-control{
+    height: 40px;
+}
+.remember{
+    text-align: left;
+}
+.btn-close{
+    border: none;
+    outline: none;
+    color: #D75F5F;
+}
+.btn-close-sign-in{
+    transform: translate(550px,-354px);
+    border: none;
+    outline: none;
+    background-color: unset;
+}
+.btn-close-sign-in:hover{
+    background-color: unset;
+    border: none;
+    outline: none;
+    border-color: unset;
+}
+.btn-close-sign-in:active{
+    box-shadow: none;
+}
+.btn-submit:hover{
+    color: black;
+    border: none;
+    outline: none;
+    background-color: unset;
+    border-color: unset;
+
+}
+.close{
+    font-weight: bold;
+    font-size: 25px;
+}

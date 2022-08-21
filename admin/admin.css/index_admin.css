@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modal-header{
+    height: 70px;
+}
+.modal_body{
+    height: 22  0px;
+    text-align: center;
+}
+.admin{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#D5CCCC,#444444);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    
+}
+.modal-total-sign-in{
+    transform: translateY(300px);
+    transition: .5s;
+    
+}
+span{
+    display: inline-block;
+    margin-left: -320px;
+    color: red;
+    align-items: flex-start;
+    
+}
+.btn{
+    width: 400px;
+    height: auto;
+}
+.btn-sign-in-admin{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    font-weight: bold;
+}
+.btn>h2{
+    color: white;
+}
+.btn:active{
+    box-shadow: none;
+}
+.sign-in-admin{
+    width: 390px;
+    height: 40px;
+}
+table{
+    text-align: center;
+    float: right;
+}
+td{
+    height: 70px;
+}
+.btn-submit-sign-in-admin{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #C1C1C1	;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    transform:translateX(142px);
+    transition: .2s;
+}
+.btn-submit-sign-in-admin:hover{
+    background-color: #A2A2A2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.footer{
+    height: 10px;
+}
+.btn-close{
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    transform: translate(13px,-292px);
+    font-size: 30px;
+}
+.btn-close:hover{
+    background-color: white;
+}
+.btn-close>.close{
+    font-size: 30px;
+}

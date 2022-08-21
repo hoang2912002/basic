@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    đây là dao diện sản phẩm    
+    <?php
+        require '../menu.php';
+        require '../connect.php';
+        $page =1;
+        $search = '';
+        if(isset($_GET['page'])){
+            $page = $_GET['page'];
+        }
+        if(isset($_GET['search']))
+        {
+            $search = $_GET['search'];
+        }
+        $sql_news = "select count(*) from products where name like '%$search%'";
+        $array_news = mysqli_query($connect,$sql_news);
+        $result_array = mysqli_fetch_array($array_news);
+        $news = $result_array['count(*)'];
+        
+        $new_in_1_line = 2;
+
+        $page_number = ceil($news/$new_in_1_line);
+
+        $pass_page = $new_in_1_line*($page-1);
+        $sql = "select products.*, manufacturers.name as manufacturers_name
+        from products
+        join manufacturers on manufacturers.id = products.id_manufacturers
+        where product.name like '%$search%'  limit $new_in_1_line offset $pass_page ";
+        
+        $result = mysqli_query($connect,$sql);
+    
+
+    ?>
+    <a href="form_insert.php">Thêm sản phẩm</a>
+    <br>
+    <caption>
+        <input type="search" name="search" value="<?php echo $search?>">
+    </caption>
+    <form>
+    <table style="width: 100%;" border="2px">
+        <tr>
+            <td>Mã</td>
+            <td>
+                Tên sản phẩm
+            </td>
+            <td>Ảnh sản phẩm</td>
+            <td>Mô tả</td>
+            <td>Giá</td>
+            <td>Hãng</td>
+        </tr>  
+        <?php foreach($result as $each):?>
+        <tr>  
+            <td>
+                <?php echo $each['id']?>
+            </td>
+            <td>
+                <input type="text" name="name" value="<?php echo $each['name']?>">
+            </td>
+            <td>
+                <img src="photo_product/<?php echo $each['photo']?>" style="height: 100px;" alt="">
+            </td>
+            <td>
+                <textarea name="" id="" cols="40" rows="10"><?php echo $each['description']?></textarea>
+            </td>
+            <td>
+                <input type="number" name="price" value="<?php echo $each['price']?>">
+            </td>
+            <td>
+                <?php echo $each['id_manufacturers']?>
+            </td>
+        </tr>
+        <?php endforeach?>
+    </table>
+    </form>
+    <?php for($i =1;$i <= $page_number;$i++){?>
+        <a href="?page=<?php echo $i?>&search=<?php echo $search?>">
+            <?php echo $i?>
+        </a>
+    <?php }?>
+</body>
+</html> -->
+
+join category on category.id 
+        = products.id_category
+
+
+        join component on component.id = products.id_component
+
+
+
+        sql in ra thẻ đa cấp 
+        select products.*,category.name as category_name,( select distinct  manufacturers.name ) as manufacturers_name
+            from products 
+            join category on category.id = products.id_category join manufacturers on manufacturers.id = products.id_manufacturers
+            where category.name like 'ĐIỆN THOẠI' and manufacturers.name =   

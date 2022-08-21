@@ -1,0 +1,48 @@
+.product_icon{
+    width: 100%;
+    height: 162.9px;
+    background-color: white;
+    display: flex;
+    object-fit: scale-down;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.product_sub_icon1{
+    width: 197.5px;
+    height: 160.6px;
+    border: none;
+    float: left;
+    margin: .2px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    object-fit: cover;
+
+
+}
+.product_sub_icon1 a{
+    border-radius: 150%;
+    width: 100px;
+    height: 100px;
+    background-color: #E8E8E8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    object-fit: cover;
+    margin:0 20%;
+    margin-top: 10px;
+}
+.name_product_icon{
+    width: 169px;
+    height: 20px;
+
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+
+.product_sub_icon1:hover,.product_sub_icon2:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}

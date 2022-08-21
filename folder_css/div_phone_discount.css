@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.discount{
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transform: translateY(86px);
+    margin-bottom: 150px;
+    z-index: -100;
+}
+.phone_discount{
+    width: 1200px;
+    height: 730px;
+    background-color: white;
+    float: left;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+    padding-left: 20px;
+}
+
+.title{
+    width: 1170px;
+    height: 40px;
+    margin: 20px;
+}
+.title i{
+    font-size: 40px;
+    float: left;
+    color: #C83613;
+}
+
+.title span{
+    font-size:30px;
+    float: left;
+    color: #C83613;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phone_sale{
+    width: 350px;
+    height: 550px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin: 20px;
+    transition: .3s;
+}
+.phone_sale >.photo_phone{
+    width: 100%;
+    height: 190px;
+}
+.photo_phone>a> img{
+    width: 170px;height: 170px;transition: .3s;
+}
+.div_name{
+    width: 100%;
+    height: 50px;
+}
+.div_name>.name{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+    margin-top: 5px;
+    color: #343231;
+}
+.phone_sale:hover {
+    border-style: initial;
+    border: 1px solid #DDD7D5;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.phone_sale:hover img{
+    width: 180px;
+    height: 180px;
+}
+.buy{
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #EA4F2E;
+    visibility: hidden;
+    transition: .0s;
+    outline: none;
+    border: none;
+}
+.buy>a{
+
+    font-weight: bold;
+    color: white;
+}
+.phone_sale:hover .buy{
+    visibility: visible;
+    background-color: red;
+}
+.phone_sale:hover .buy>a{
+    color: white;
+    text-decoration: none;
+}
+.name:hover{
+    color: #1D7CF5;
+}
+.phone_discount_price_phone_sale{
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+    margin-top: 5px;
+    justify-content: center;
+}
+.price_phone_sale{
+    width: 45%;
+    height: 100%;
+    background-color: #FB4F4F;
+    
+    font-weight: bold;
+    border-radius: 20px;
+}
+.price_phone_sale span{
+    color: white;font-size: 18px;
+}
+.phone_discount_infor{
+    width: 320px;
+    height: 35%;
+    background-color: #e9ecef;
+    border: solid 1px #DDD7D5;
+
+    border-radius: 5px;
+   
+    padding: 10px;
+    color: #A7A6A6;
+    text-align: left;
+    margin:10px auto;
+}
+.phone_discount_infor span{
+    color: #A7A6A6; font-size: 15px ;
+
+}
+.number{
+    width: 350px;
+    height: 30px;
+    float: left;
+    transform: translate(408px,586px); 
+    position: fixed;  
+
+}
+.number>.page_number{
+    width: 17px;
+    height: 17px;
+    color:#A7A6A6 ;
+    transition: .2s;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.pre,.next{
+    transition: .5s;
+    text-align: center;
+}
+.pre:hover .div-change-page-pre>a,.next:hover .div-change-page-next>a{
+    color: #fff;
+    transition-duration: 1s;
+}
+.pre:hover ,.next:hover{
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    
+}
+.pre{
+    width: 60px;
+    height: 70px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    transform: translate(-20px,210px);
+    position: absolute;
+    justify-content: center;
+    display: flex   ;
+    align-items: center;
+}
+
+.next{
+    width: 60px;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transform: translate(1120px,210px);
+    position: absolute;
+    justify-content: center;
+    display: flex   ;
+    align-items: center;
+}
+
+.div-change-page-pre a,.div-change-page-next a{
+    font-size: 40px;
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+.div-change-page-pre a{
+    animation-name: animation-btn-pre;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.div-change-page-next a{
+    animation-name: animation-btn-next;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.btn-change-page:hover{
+    text-decoration: none;
+    color: #fff;
+    animation: none;
+}
+
+.inline{      
+    margin: 20px 0px;  
+    width: 134px;
+    height: 34px; 
+    transform: translate(1052px,-17px);
+}   
+.page{   
+    height: 24px;   
+    width: 50px;
+    border: none;
+    outline: none;
+}  
+.page_number:hover a:not(.active) {   
+       color: #EA4F2E;
+       text-decoration: none;
+}
+.go{
+    width: 50px;
+    height: 34px;
+    z-index: 999;
+    border-radius: 5px;
+    border: none;
+    background-color: #1D7CF5;
+    color: #fff ;
+} 
+.btn-add-to-cart{
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4E4E;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transition: .2s;
+}
+.phone_sale:hover .btn-add-to-cart{
+    opacity: 1;
+}
+.btn-add-to-cart:hover{
+    background-color: 	#FC2626;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@keyframes animation-btn-pre{
+    0% {left: -5px;top: 0px;}
+    25% {left: 0px;top:0px;}
+    50% {left: -5px;top:0px;}
+    75% {left: 0px;top:0px;}
+    100% {left: -5px;top:0px;}
+}
+
+@keyframes animation-btn-next{
+    0% {left: 5px;top: 0px;}
+    25% {left: 0px;top:0px;}
+    50% {left: 5px;top:0px;}
+    75% {left: 0px;top:0px;}
+    100% {left: 5px;top:0px;}
+}

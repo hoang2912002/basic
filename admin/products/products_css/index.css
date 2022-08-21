@@ -1,0 +1,39 @@
+.col-sm-12>table{
+    min-width: 100%; 
+    text-align:center ; 
+    min-height:200px;
+    font-size: 18px;
+    
+}
+.col-sm-12>table>tr>td{
+    display: flex;
+    
+    align-items: center;
+    vertical-align: middle;
+    
+}
+.fix,.delete{
+    font-size: 20px;
+}
+.fix{
+    color: #8E9192;
+    
+    transition: .3s;
+}
+.delete{
+    color: #F03939;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .3s;
+}
+.delete:hover{
+    color: 	#B02929;
+}
+.fix:hover{
+    color: #6C6565
+    ;
+}
+.infor_product{
+    vertical-align: middle;
+    margin: auto;
+}

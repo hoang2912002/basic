@@ -1,0 +1,51 @@
+.search_autocomplete{
+    display: inline-block;
+    margin: 10px;
+    width: 550px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.sub_display{
+    width:auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3E83DC;
+    border: none;
+    text-decoration: none;
+}
+
+
+.sub_display:hover{
+    background-color: white;
+    color: #3E83DC;
+    font-weight: bold;
+    border-radius: 2px;
+    border-color:white
+}
+#ui-id-1{
+    border: none;
+    background-color: white;
+    list-style-type: none;
+    width: 600px;
+    text-decoration: none;
+}
+#ui-id-1:hover{
+    background-color: white;
+
+}
+#ui-id-1>.photo-product-search{
+    background-color: white;
+}
+#ui-id-1>.price-product-search{
+    background-color: white;
+}
+
+.ui-menu-item>span{
+    color: red;
+}
+.ui-helper-hidden-accessible{
+    display: none;
+}

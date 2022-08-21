@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.div-bill-detail{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.x_content>.div-bill-detail{
+    width: 100%;
+    height: 100%;
+
+}
+.div-sub-bill-detail{
+    width: 800px;
+    min-height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.div-product{
+    width: 100%;
+    height: 350px;
+
+    float: left;
+    display: flex;
+}
+.div-photo-product{
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+    border-right:1px solid #D4D4D4 ;
+    
+}
+.div-infor-product{
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    padding-left:30px;
+    font-size: 18px;
+}
+.div-name-product{
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #444444;
+}
+.div-quantity-product{
+    width: 100%;
+    height: 30px;
+    color: #989898;
+    font-size: 15px;
+}
+.div-price-product{
+    width: 100%;
+    height: 30px;
+    color: #D85555;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    
+}
+.div-status{
+    width: 100%;
+    height: 30px;
+    color: #989898;
+    font-size: 15px;
+}
+.div-infor-customer{
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.div-sub-infor-customer{
+    width:800px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px
+}
+.Total-price-bill{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    float: left;
+    font-size: 18px;
+    align-items: center;
+    border-bottom: 1px solid #D4D4D4 ;
+}
+.text-price{
+    width: 400px;
+    height: 100%;
+   
+}
+.text-price>span{
+    
+    transform: translate(30px ,10px);
+    position: absolute;
+}
+.bill-price{
+    width: 400px;
+    height: 100%;
+    display: inline-block;
+    text-align: right;
+}
+.bill-price>span{
+    color: #D85555;
+    font-weight: bold;
+    transform:  translate(-110px,10px);
+    position: absolute;
+}
+.div-sub-infor-customer>.form-group>label{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.div-sub-infor-customer>.form-group>.cus-infor{
+    margin-left: 80px;
+    height: fit-content;
+    
+}

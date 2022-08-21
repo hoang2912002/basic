@@ -1,0 +1,40 @@
+.class>a{
+    font-size: 20px;
+}
+.div_sub_icon{
+    display: flex;
+    justify-content: end;
+}
+.sub_icon{
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    
+    
+}
+.sub_icon>i{
+    font-size: 20px;
+    position: absolute;
+
+}
+.sub_icon>span{
+   margin-left: 30px;
+}
+.green,.delete{
+    transition: .3s;
+}
+.last>.green:hover{
+   background-color: #47C364;
+   border-radius: 2px;
+}
+.last>.delete:hover{
+    background-color: #A6A5A5;
+    border-radius: 2px;
+}
+.show{
+    font-size: 17px;
+    color: #818181;
+}
+.show:hover{
+    color: #8E8E8E;
+}

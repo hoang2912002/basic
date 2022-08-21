@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color:whitesmoke ;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            text-align: center;
+            object-fit: cover;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            transform: .5s;
+        }
+        #body{
+            width: 1200px;
+            height: 95%;
+            border-radius: 5px; 
+            text-align: left;  
+            position: absolute;
+            top: 50px;
+        }
+        .title{
+            align-items: center;
+            align-content: center;
+            display: grid;
+            text-align: left;
+            width: 100%;
+            height: 90px;
+            background-color: white;
+            border-top-left-radius:5px ;
+            border-top-right-radius:5px ;
+            padding: 25px;
+        }
+        .title>a{
+            text-decoration: none;
+            font-size: 14px;
+        }
+        h4{
+            font-size: 22px;
+        }
+        .detail{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            border-bottom-left-radius:5px ;
+            border-bottom-right-radius:5px ;
+        }
+        .img{
+            margin-top: 20px;
+            width: 585px;
+            height: 390px;
+            border: 1px solid #DDD7D5;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        .price{
+            margin-top: 20px;
+            width: 585px;
+            height: 480px;
+            text-align: left;
+            font-size: 30px;
+            color: #EA4F2E;
+        }
+        .digital{
+            width: 90%;
+            height: 210px;
+            background-color: #e9ecef;
+            border: solid 1px #DDD7D5;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 18px ;
+            padding: 10px;
+            color: #A7A6A6;
+        }
+        span{
+            margin: 10px ;
+            font-size: 15px;
+        }
+        .btn-buy{
+            width: 100%;
+            height: 50px;
+            background-color: #EA4F2E;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            transform: translateY(73px);
+            transition: .2s;
+        }
+        .btn-buy:hover{
+            background-color: red;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        }
+        .emty{
+            width: 100%;
+            height: 20px;
+            background-color: whitesmoke;
+        }
+        .infor{
+            width: 100%;
+            height: 90%;
+            background-color: white;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        .menu_top{
+            width: 100%;
+            height: 50px;
+            background-color: #EA4F2E;
+        }
+        .a-buy{
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 450;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .btn-remore{
+            background-color: unset;
+            border: none;
+            color: black;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: initial;
+            margin: auto;
+            
+        }
+        .btn-remore:hover{
+            background-color: unset;
+            cursor: pointer;
+            box-shadow: none;
+        }
